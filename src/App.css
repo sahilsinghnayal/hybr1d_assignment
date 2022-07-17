@@ -2,37 +2,31 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  /* border:2px solid red; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+  border-radius: 23px;
+  width: 26vw;
+  border: 2px solid rgb(160, 14, 14);
+  height: 7vh;
+  margin-top: 32px !important;
+  font-size: 1.3rem;
+  padding: 18px;
 }
+.NewsCardContainer{
+  margin-top: 13px;
+ /* border-radius: 29px;
+ border:2px solid; */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.NewsCardContainer IMG{
+height: 13rem;
+}
+.wholecardContainer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: auto;
 }
