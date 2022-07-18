@@ -2,7 +2,7 @@ import React from "react";
 import cardimg from "../Images/cardimg.png";
 import { Button,Card} from 'react-bootstrap';
 function NewsCard({data}) {
-    console.log(data)
+    // console.log(data)
   return (
     <>
     {/* <NavLink to={`d/${imdbID}`}key={imdbID}> > */}
