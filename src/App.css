@@ -1,32 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+*{
+  background: #282323;
+}
 .App {
   text-align: center;
+  background: #282323;
 }
 
 .container {
   /* border:2px solid red; */
 }
-input{
+input {
   border-radius: 23px;
-  width: 26vw;
-  border: 2px solid rgb(160, 14, 14);
+  width: 31vw;
+  border: 3px solid rgb(160, 14, 14);
   height: 7vh;
   margin-top: 32px !important;
   font-size: 1.3rem;
   padding: 18px;
+  color: white;
+  background-color: rgb(0, 0, 0);
 }
-.NewsCardContainer{
+.searchwait{
+  text-decoration: underline;
+  color: red;
+  height: 100vh;
+  font-size: 23px;
+}
+.NewsCardContainer {
   margin-top: 13px;
- /* border-radius: 29px;
+  /* border-radius: 29px;
  border:2px solid; */
-
 }
-.NewsCardContainer IMG{
-height: 13rem;
+.NewsCardContainer IMG {
+  height: 13rem;
 }
-.wholecardContainer{
+.wholecardContainer {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1000px;
-    margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: auto;
 }
+.singlecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: auto;
+  background: #282323;
+}
+
+@media only screen and (max-width: 620px) {
+  input {
+    width: 80vw;
+  }
+}
+

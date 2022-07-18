@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Fetch from './Fetch'
+import Searchwait from './Searchwait';
 
 function Home() {
     const [query, setQuery] = useState("");
@@ -9,7 +10,9 @@ function Home() {
     placeholder='search here...' 
     onChange={(e)=>{setQuery(e.target.value)}}/>
     </div>
-    <Fetch sendquery={query}/>
+     {  query?
+    <Fetch sendquery={query}/>:<Searchwait/>
+     }
     </>
     )
 }

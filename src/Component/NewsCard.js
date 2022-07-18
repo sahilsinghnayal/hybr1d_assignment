@@ -8,10 +8,10 @@ function NewsCard({data}) {
     {/* <NavLink to={`d/${imdbID}`}key={imdbID}> > */}
       <div className="NewsCardContainer">
         <div className="cardContainer">
-        <Card style={{ width: '15rem'}}>
+        <Card style={{ width: '15rem',background:"black",color:"white"}}>
       <Card.Img variant="top" src={cardimg}/>
       <Card.Body>
-        <Card.Title>{data.title}</Card.Title>
+        <Card.Title>{data.title?data.title.slice(0,15)+`...`:"unknown"}</Card.Title>
         <Card.Text >
      AUTHOR : {data.author.toUpperCase()}
         </Card.Text>

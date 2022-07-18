@@ -8,12 +8,13 @@ function Fetch({ sendquery }) {
   const searchUrl = `https://hn.algolia.com/api/v1/search?query=${sendquery}`;
   useEffect(() => {
     const fetched = async () => {
-        setloading(false);
+      setloading(false);
       const response = await fetch(searchUrl);
       const data = await response.json();
       setdata(data);
       setloading(true);
     };
+
     fetched();
   }, [sendquery]);
 
@@ -24,7 +25,7 @@ function Fetch({ sendquery }) {
           return <NewsCard data={value} />;
         })
       ) : (
-        <Loading/>
+        <Loading />
       )}
     </div>
   );
