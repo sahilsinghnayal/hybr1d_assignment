@@ -55,7 +55,7 @@ function SinglePage() {
                         fontStyle:"italic"
                       }}
                     >
-                      {value.text? value.text.replace(/(<([^>]+)>)/gi, "").slice(0,70):"Unkwon"}
+                      {value.text? value.text.replace(/(<([^>]+)>)/gi, "").slice(0,60):"Unkwon"}
                     </ListGroup.Item>
                   </ListGroup>
                 );
