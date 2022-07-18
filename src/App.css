@@ -46,6 +46,7 @@ input {
 }
 .singlecontainer {
   display: flex;
+  overflow: hidden;
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-width: 1000px;
