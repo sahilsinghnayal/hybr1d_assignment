@@ -51,6 +51,7 @@ input {
   max-width: 1000px;
   margin: auto;
   background: #282323;
+  Overflow :hidden;
 }
 
 @media only screen and (max-width: 620px) {
